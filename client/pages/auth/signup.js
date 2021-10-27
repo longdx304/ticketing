@@ -8,7 +8,7 @@ const SignUp = () => {
   const { doRequest, errors } = useRequest({
     url: '/api/users/signup',
     method: 'post',
-    body: {email, password},
+    body: { email, password },
     onSuccess: () => Router.push('/'),
   });
 
@@ -19,9 +19,9 @@ const SignUp = () => {
   };
 
   return (
-    <form onSubmit={onSubmit} className="needs-validation">
+    <form onSubmit={onSubmit}>
       <h1>Sign Up</h1>
-      <div className="mb-3 has-validation">
+      <div className="mb-3">
         <label className="form-label">Email Address</label>
         <input
           value={email}
