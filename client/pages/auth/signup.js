@@ -1,4 +1,4 @@
-import AuthForm from '../../components/auth/AuthForm';
+import AuthForm from '../../components/auth/auth-form';
 
 const SignUp = () => {
   return <AuthForm title="Sign Up" url="/api/users/signup" />;
